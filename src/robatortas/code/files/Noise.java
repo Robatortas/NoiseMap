@@ -18,11 +18,11 @@ public class Noise {
 	//My representation of the noise channels
 	/* Noise Channels
        sample:    A  B      |1
-       half:            H   |1.5
+       half:     F      H   |1.5
        sample:    C         |2
        half:         D      |2.5
        sample:       E      |3
-       half:        F       |3.5
+       half:                |3.5
        sample        G      |4
     ------------------------|
     X             1  2  3  4 Y
