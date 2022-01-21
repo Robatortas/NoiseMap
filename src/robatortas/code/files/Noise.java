@@ -15,15 +15,17 @@ public class Noise {
 	
 	public Random random = new Random();
 	
-	//My representation of the noise channels
+	/*My representation of the noise channels
+	  combined from both for loops
+	*/
 	/* Noise Channels
        sample:    A  B      |1
-       half:     F      H   |1.5
+       half:     F          |1.5
        sample:    C         |2
-       half:         D      |2.5
-       sample:       E      |3
+       half:          D     |2.5
+       sample:          EH  |3
        half:                |3.5
-       sample        G      |4
+       sample:       G      |4
     ------------------------|
     X             1  2  3  4 Y
                    .5 .5 .5
