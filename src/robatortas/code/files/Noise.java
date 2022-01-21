@@ -63,8 +63,8 @@ public class Noise {
 					double e=sample(x+halfSample,y-halfSample);
 					double f=sample(x-halfSample,y+halfSample);
 					
-					double H=(a+b+d+e)/4.0+(random.nextFloat()*2-1)*sample*scale*0.5;
-					double g=(a+c+d+f)/4.0+(random.nextFloat()*2-1)*sample*scale*0.5;
+					double H=(a+b+d+e)/4.0+(random.nextFloat()*2-1)*sample*scale;
+					double g=(a+c+d+f)/4.0+(random.nextFloat()*2-1)*sample*scale;
 					setSample(x+halfSample,y,H);
 					setSample(x,y+halfSample,g);
 				}
@@ -88,7 +88,7 @@ public class Noise {
 		while(true) {
 		System.out.println("Generating Noise Map...");
 		
-		Noise noiseMap = new Noise(width,height,64);
+		Noise noiseMap = new Noise(width,height,16);
 		
 		BufferedImage image = new BufferedImage(width,height,BufferedImage.TYPE_INT_RGB);
 		int[] pixels = new int[width*height];
